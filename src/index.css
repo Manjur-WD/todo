@@ -8,8 +8,6 @@ body {
 
 .todolist-wrap{
   height: 60vh;
-  width: 50%;
-  margin: auto;
   overflow-y: auto;
   background-color: aliceblue;
   padding: 1rem;

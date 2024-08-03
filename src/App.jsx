@@ -1,15 +1,18 @@
-import React from 'react'
-import TodoForm from './components/TodoForm'
-import "./index.css"
-import TodoCard from './components/TodoCard'
+import React from "react";
+import TodoForm from "./components/TodoForm";
+import "./index.css";
+import TodoList from "./components/TodoList";
+import { RenderCheckProvider } from "./context/RenderContext";
 
 const App = () => {
   return (
     <main>
-      <TodoForm />
-      <TodoCard />
+      <RenderCheckProvider>
+        <TodoForm />
+        <TodoList />
+      </RenderCheckProvider>
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
